@@ -1,4 +1,4 @@
-int total =  0;
+int total = 0;
 
 void setup()
 {
@@ -47,47 +47,47 @@ class Die //models one single dice cube
     square(dieX,dieY,50);
     if (dieNumber == 1) {
       fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
-    circle(dieX+25,dieY+25,5);
+    ellipse(dieX+25,dieY+25,5,5);
     total=total+1;
      }
      else if (dieNumber == 2){
        fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
-       circle(dieX+15,dieY+25,5);
-       circle(dieX+35,dieY+25,5);
+       ellipse(dieX+15,dieY+25,5,5);
+       ellipse(dieX+35,dieY+25,5,5);
         total=total+2;
      }
      else if (dieNumber == 3){
        fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
-       circle(dieX+10,dieY+25,5);
-       circle(dieX+25,dieY+25,5);
-       circle(dieX+40,dieY+25,5);
+       ellipse(dieX+10,dieY+25,5,5);
+       ellipse(dieX+25,dieY+25,5,5);
+       ellipse(dieX+40,dieY+25,5,5);
         total=total+3;
      }
      else if (dieNumber == 4){
         fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
-       circle(dieX+15,dieY+20,5);
-       circle(dieX+35,dieY+20,5);
-       circle(dieX+15,dieY+30,5);
-       circle(dieX+35,dieY+30,5);
+       ellipse(dieX+15,dieY+20,5,5);
+       ellipse(dieX+35,dieY+20,5,5);
+       ellipse(dieX+15,dieY+30,5,5);
+       ellipse(dieX+35,dieY+30,5,5);
         total=total+4;
      }
      else if (dieNumber == 5){
        fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
-       circle(dieX+10,dieY+10,5);
-       circle(dieX+10,dieY+40,5);
-       circle(dieX+25,dieY+25,5);
-       circle(dieX+40,dieY+10,5);
-       circle(dieX+40,dieY+40,5);
+       ellipse(dieX+10,dieY+10,5,5);
+       ellipse(dieX+10,dieY+40,5,5);
+       ellipse(dieX+25,dieY+25,5,5);
+       ellipse(dieX+40,dieY+10,5,5);
+       ellipse(dieX+40,dieY+40,5,5);
         total=total+5;
      }
      else {
        fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
-       circle(dieX+10,dieY+10,5);
-       circle(dieX+10,dieY+40,5);
-       circle(dieX+25,dieY+10,5);
-       circle(dieX+25,dieY+40,5);
-       circle(dieX+40,dieY+10,5);
-       circle(dieX+40,dieY+40,5);
+       ellipse(dieX+10,dieY+10,5,5);
+       ellipse(dieX+10,dieY+40,5,5);
+       ellipse(dieX+25,dieY+10,5,5);
+       ellipse(dieX+25,dieY+40,5,5);
+       ellipse(dieX+40,dieY+10,5,5);
+       ellipse(dieX+40,dieY+40,5,5);
         total=total+6;
      }
   }
