@@ -44,7 +44,7 @@ class Die //models one single dice cube
   void show()
   {
     fill(25);
-    square(dieX,dieY,50);
+    rect(dieX,dieY,50,50);
     if (dieNumber == 1) {
       fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
     ellipse(dieX+25,dieY+25,5,5);
